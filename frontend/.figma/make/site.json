@@ -1,0 +1,6 @@
+{
+  "title": "KhojaSphere",
+  "description": "AI-powered platform uniting community discovery, business listings, property and marketplace searches with intelligent natural-language search and inquiry features.",
+  "robots": { "index": false },
+  "accessibility": { "addBypassLinks": false, "ignoreReducedMotion": false }
+}

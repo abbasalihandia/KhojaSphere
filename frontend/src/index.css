@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400&family=Inter:wght@300;400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-display: 'Plus Jakarta Sans', ui-sans-serif, sans-serif;
+  --font-sans: 'Inter', ui-sans-serif, system-ui, sans-serif;
+
+  /* Community Green */
+  --color-brand-50: #edf7f1;
+  --color-brand-100: #d8eee0;
+  --color-brand-200: #adddc0;
+  --color-brand-300: #78c397;
+  --color-brand-400: #41a36c;
+  --color-brand-500: #238653;
+  --color-brand-600: #176d42;
+  --color-brand-700: #145737;
+  --color-brand-800: #12462f;
+  --color-brand-900: #0f3a28;
+  --color-brand-950: #07291c;
+
+  /* Gold Accent */
+  --color-gold-50: #fcf8e9;
+  --color-gold-100: #f8efc8;
+  --color-gold-200: #eedc92;
+  --color-gold-300: #e2c45b;
+  --color-gold-400: #d3aa35;
+  --color-gold-500: #b98a24;
+  --color-gold-600: #96681c;
+  --color-gold-700: #79501b;
+  --color-gold-800: #64411c;
+
+  /* Surface */
+  --color-surface: #f7f8f3;
+  --color-surface-alt: #edf1ea;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-surface);
+  color: var(--color-brand-950);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-display);
+}
+
+*::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+*::-webkit-scrollbar-thumb {
+  background: var(--color-brand-200);
+  border-radius: 3px;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+  background: var(--color-brand-400);
+}

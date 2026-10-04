@@ -1,0 +1,13 @@
+# Optional: PostgreSQL for local development. (SQLite works out of the box without this.)
+# Then set in backend/.env:  DATABASE_URL=postgresql://khoja:khoja@localhost:5432/khojasphere
+services:
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_USER: khoja
+      POSTGRES_PASSWORD: khoja
+      POSTGRES_DB: khojasphere
+    ports: ["5432:5432"]
+    volumes: [pgdata:/var/lib/postgresql/data]
+volumes:
+  pgdata:
