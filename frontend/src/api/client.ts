@@ -1,5 +1,5 @@
 // Single place that talks HTTP to the KhojaSphere backend.
-const BASE_URL = (import.meta.env.VITE_API_URL as string | undefined)?.replace(/\/$/, '') ?? 'http://localhost:8000';
+const BASE_URL = ((import.meta.env.VITE_API_URL as string | undefined) || 'https://khojasphere-api.onrender.com').replace(/\/$/, '');
 const TOKEN_KEY = 'khojasphere.token';
 
 export const tokenStore = {
